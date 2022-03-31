@@ -282,6 +282,7 @@ main button{
 .design button{
     max-width: 200px;
     background: var(--light-blue-color);
+    margin: 0 auto;
 }
 /******************************************/
 /*                    same                */
@@ -431,12 +432,15 @@ button{
     display: grid;
     gap: 1rem;
 }
-.office figure{
-    margin: 0;
+.office .figure-con{
     height: 250px;
 }
-.no-caption img{
-    height: calc(250px + 1rem);
+.office .figure-con .no-caption{
+    height: 265px;
+}
+.office figure {
+    margin: 0;
+    padding: 0;
 }
 .office img{
     border-radius: 0;
@@ -453,7 +457,7 @@ button{
 .office .figure-con::after{
     content: "By: Luke Skywalker";
     position: absolute;
-    bottom: .5rem;
+    bottom: 1.5rem;
     right: .5rem;
     padding: .5rem 1.5rem;
     border-radius: .5rem;
@@ -522,7 +526,7 @@ input[type = "submit"]{
 /*********************************************/
 /*                footer                     */ 
 /*********************************************/
-footer{
+.under-body > footer{
     padding: 1rem;
     background: var(--dark-blue-color);
 }
@@ -581,7 +585,7 @@ footer article{
         padding-right: 0;
         max-height: 380px;
         margin: 5rem auto;
-    } 
+    }
     /********************/
     .fr2:not(footer){
         grid-template-columns: 1fr;
